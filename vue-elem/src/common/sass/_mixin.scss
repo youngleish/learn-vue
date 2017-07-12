@@ -1,0 +1,36 @@
+@mixin border-1px ($name:border,$clr:#eee,$type:solid){
+    position:relative;
+    &:after{
+        position: absolute;
+        z-index:-1;
+        left:0;
+        bottom:0;
+        top:0;
+        right:0;
+        #{$name}: 1px $type $clr;
+        content: ' ';
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+    }
+}
+@mixin border-none (){
+    &：after{
+        display: none;
+    }
+}
+
+@mixin bg-img ($url){
+    background-image: url($url + '@2x.png');
+    @media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3) {
+        background-image: url($url + '@3x.png');
+    }
+}
+@mixin text-clamp ($line:2){
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    display: -moz-box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-line-clamp: $line;
+}

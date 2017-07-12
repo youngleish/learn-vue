@@ -1,0 +1,316 @@
+@charset "UTF-8";
+
+$am-ui-icons: 'AM-UI-Icons';
+
+@font-face {
+    font-family: "AM-UI-Icons";
+    src: url("../fonts/am-ui-icons.eot") format("eot"),
+    url("../fonts/am-ui-icons.woff") format("woff"),
+    url("../fonts/am-ui-icons.ttf") format("truetype"),
+    url("../fonts/am-ui-icons.svg") format("svg");
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: $am-ui-icons;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bin:before {
+    content: "\e919";
+}
+
+.icon-user-line:before {
+    content: "\e917";
+}
+
+.icon-long-arrow-up:before {
+    content: "\e918";
+}
+
+.icon-minus:before {
+    content: "\e916";
+}
+
+.icon-shop:before {
+    content: "\e915";
+}
+
+.icon-star-solid:before {
+    content: "\e90d";
+}
+
+.icon-star:before {
+    content: "\e90e";
+}
+
+.icon-anxinda:before {
+    content: "\e90f";
+}
+
+.icon-baoshuicang:before {
+    content: "\e910";
+}
+
+.icon-flash:before {
+    content: "\e911";
+}
+
+.icon-guoneixianhuo:before {
+    content: "\e912";
+}
+
+.icon-pinyou:before {
+    content: "\e913";
+}
+
+.icon-zhiyou:before {
+    content: "\e914";
+}
+
+.icon-long-arrow-up:before {
+    content: "\e90c";
+}
+
+.icon-balloon:before {
+    content: "\e90b";
+}
+
+.icon-shopping-cart:before {
+    content: "\e90a";
+}
+
+.icon-camera:before {
+    content: "\e909";
+}
+
+.icon-clock:before {
+    content: "\e900";
+}
+
+.icon-bell:before {
+    content: "\e901";
+}
+
+.icon-v1:before {
+    content: "\e902";
+}
+
+.icon-v2:before {
+    content: "\e903";
+}
+
+.icon-v3:before {
+    content: "\e904";
+}
+
+.icon-v4:before {
+    content: "\e905";
+}
+
+.icon-v5:before {
+    content: "\e906";
+}
+
+.icon-v6:before {
+    content: "\e907";
+}
+
+.icon-v0:before {
+    content: "\e908";
+}
+
+.icon-diamond:before {
+    content: "\e603";
+}
+
+.icon-crown:before {
+    content: "\e604";
+}
+
+.icon-bar-signal:before {
+    content: "\e602";
+}
+
+.icon-map-marker:before {
+    content: "\e600";
+}
+
+.icon-heart:before {
+    content: "\e601";
+}
+
+.icon-plus:before {
+    content: "\e114";
+}
+
+.icon-check:before {
+    content: "\e116";
+}
+
+.icon-cross:before {
+    content: "\e117";
+}
+
+.icon-zfb:before {
+    content: "\e90e";
+}
+
+.icon-phone:before {
+    content: "\f095";
+}
+
+.icon-angle-left:before {
+    content: "\f104";
+}
+
+.icon-weibo:before {
+    content: "\f18a";
+}
+
+.icon-wechat:before {
+    content: "\f1d7";
+}
+
+.icon-weixin:before {
+    content: "\f1d7";
+}
+
+.icon-user:before {
+    content: "\f007";
+}
+
+.icon-angle-double-down:before {
+    content: "\f103";
+}
+
+// 自定义 icon
+//   .icon-clock-o {
+//     background: url('../../img/icon/icon-clock-o.png') no-repeat center;
+//     background-size: 100%;
+//   }
+
+.icon-angle-right {
+    display: inline-block;
+    transform: rotate(-180deg);
+    &:before {
+        content: "\f104";
+    }
+}
+
+//.icon-like {
+//  background: url('../../img/icon/like.png') no-repeat center;
+//  background-size: 100%;
+//}
+//
+//.icon-comment {
+//  background: url('../../img/icon/comment.png') no-repeat center;
+//  background-size: 100%;
+//}
+//
+//.icon-down-arrow-brown {
+//  background: url('../../img/icon/down-arrow-brown.png') no-repeat center;
+//  background-size: 100%;
+//}
+//
+//.icon-loading {
+//  background: url('../../img/icon/loading.png') no-repeat center;
+//  background-size: 1em;
+//  animation: loading-animation 1s infinite step-start;
+//}
+//
+//.icon-scan-code {
+//  background: url('../../img/icon/scan-code.png') no-repeat center;
+//  background-size: 1em;
+//}
+//
+//.icon-home {
+//  background: url('../../img/icon/icon-home.png') no-repeat center;
+//  background-size: 1em;
+//}
+
+@keyframes loading-animation {
+    from {
+        transform: rotate(0deg);
+    }
+    8.32% {
+        transform: rotate(0deg);
+    }
+    8.33% {
+        transform: rotate(30deg);
+    }
+    16.65% {
+        transform: rotate(30deg);
+    }
+    16.66% {
+        transform: rotate(60deg);
+    }
+    24.99% {
+        transform: rotate(60deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    33.32% {
+        transform: rotate(90deg);
+    }
+    33.33% {
+        transform: rotate(120deg);
+    }
+    41.65% {
+        transform: rotate(120deg);
+    }
+    41.66% {
+        transform: rotate(150deg);
+    }
+    49.99% {
+        transform: rotate(150deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    58.32% {
+        transform: rotate(180deg);
+    }
+    58.33% {
+        transform: rotate(210deg);
+    }
+    66.65% {
+        transform: rotate(210deg);
+    }
+    66.66% {
+        transform: rotate(240deg);
+    }
+    74.99% {
+        transform: rotate(240deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    83.32% {
+        transform: rotate(270deg);
+    }
+    83.33% {
+        transform: rotate(300deg);
+    }
+    91.65% {
+        transform: rotate(300deg);
+    }
+    91.66% {
+        transform: rotate(330deg);
+    }
+    99.99% {
+        transform: rotate(330deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
