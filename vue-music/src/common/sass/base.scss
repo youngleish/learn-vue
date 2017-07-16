@@ -10,3 +10,11 @@ html, body{
 .icon{
     display: inline-block;
 }
+.clearfix{
+    zoom: 1;
+    &:after{
+        display: block;
+        content: '';
+        clear: both;
+    }
+}
