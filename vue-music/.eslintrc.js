@@ -24,6 +24,8 @@ module.exports = {
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
     //缩进设置
-    'indent': [1, 4, {"SwitchCase": 1}]
+    'indent': [1, 4, {"SwitchCase": 1}],
+    // 去掉函数名和()之间的空格限制
+    'space-before-function-paren': 0
   }
 }

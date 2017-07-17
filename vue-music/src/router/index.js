@@ -28,6 +28,10 @@ export default new Router({
             path: '/singer',
             name: 'Singer',
             component: Singer
+        },
+        {
+            path: '/',
+            redirect: '/recommend'
         }
     ]
 })
