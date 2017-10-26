@@ -1,18 +1,18 @@
 <template>
     <div id="app">
-        <Header></Header>
+        <m-head></m-head>
         <tab></tab>
         <router-view></router-view>
     </div>
 </template>
 
 <script>
-    import Header from 'components/header/header'
+    import MHead from 'components/head/header'
     import Tab from 'components/tab'
     export default {
         name: 'app',
         components: {
-            Header, Tab
+            MHead, Tab
         }
     }
 </script>

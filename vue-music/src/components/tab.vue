@@ -16,11 +16,9 @@
 </template>
 
 <script>
-    import jsonp from 'common/js/jsonp'
+//    import jsonp from 'common/js/jsonp'
     export default {
         created () {
-            console.log(1111)
-            jsonp()
         }
     }
 </script>
