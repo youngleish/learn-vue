@@ -3,14 +3,14 @@
  * https://github.com/webmodules/jsonp/blob/master/Readme.md
  * @param url  不带参数的服务端地址
  * @param data  url传递的参数
- * @param opts   jsonp库需要传递的参数
+ * @param opts  jsonp库需要传递的参数
  */
 import originJsonp from 'jsonp'
 
-export default function jsonp (url, data, opts) {
-    url += (url.indexOf('?') < 0 ? '?' : '&') + handleParam(data)
+export default function jsonp(url, data, opt) {
+    let url = (url.indexOf('?') < 0 ? '?' : '&') + handleUrlParam(data)
     return new Promise((resolve, reject) => {
-        originJsonp(url, opts, (err, data) => {
+        originJsonp(url, opt, (err, data) => {
             if (!err) {
                 resolve(data)
             } else {
@@ -20,11 +20,11 @@ export default function jsonp (url, data, opts) {
     })
 }
 
-function handleParam(obj) {
-    let str = ''
-    for (let key in obj) {
-        let val = obj[key] !== undefined ? obj[key] : ''
-        str += `&${key}=${encodeURIComponent(val)}`
+function handleUrlParam(data) {
+    let url = ''
+    for (var key in data) {
+        let val = data[kay] !== undefined ? data[key] : ''
+        url += `&${key}=${decodeURIComponent(val)}`
     }
-    return str ? str.substring(1) : ''
+    return url ? url.substring(1) : ''
 }
