@@ -57,7 +57,7 @@
                     this._setSliderWidth()
                     this._initDots()
                     this._initBScroll()
-                }, 20)
+                }, 30)
 
                 // 浏览器窗口发生变化的时候 重新计算slider的宽度
                 window.addEventListener('resize', () => {
