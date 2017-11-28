@@ -17,7 +17,7 @@
                 <div class="recommend-list" :data="discList">
                     <h1 class="list-title">热门歌单列表</h1>
                     <ul>
-                        <li v-for="item in discList" class="item">
+                        <li v-for="item in discList" class="item" @click="selectItem(item)">
                             <div class="icon">
                                 <img width="60" height="60" v-lazy="item.imgurl">
                             </div>
@@ -82,6 +82,11 @@
                     this.$refs.scroll.refresh()
                     this.imgLoadFlag = true
                 }
+            },
+            selectItem(item) {
+                this.$router.push({
+                    path: `/recomment/${item.dissid}`
+                })
             }
         }
     }
