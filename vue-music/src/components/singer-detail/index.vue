@@ -6,12 +6,26 @@
 
 <script>
     import {mapGetters} from 'vuex'
+    import {ERR_OK} from 'api/config'
+    import {getSingerDetail} from 'api/singer'
     export default {
         computed: {
-            ...mapGetters(['singer'])
+            ...mapGetters([
+                'singer'
+            ])
         },
         created() {
             console.log(this.singer)
+            this.getSingerDetail()
+        },
+        methods: {
+            getSingerDetail() {
+                getSingerDetail(this.singer.id).then((res) => {
+                    if (res.code === ERR_OK) {
+                        console.log(res)
+                    }
+                })
+            }
         }
     }
 </script>
